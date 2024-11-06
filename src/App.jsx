@@ -12,6 +12,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
 import IlluminatedStatsSection from "./components/StateSection/IlluminatedStatsSection";
+import Footer from "./components/Footer/Footer";
 
 function randomInSphere(numPoints, radius) {
     const points = new Float32Array(numPoints * 3);
@@ -317,6 +318,7 @@ function Home() {
                     </div>
                 </section>
             </motion.div>
+            <Footer />
         </div>
     );
 }

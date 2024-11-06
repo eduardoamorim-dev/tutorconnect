@@ -82,7 +82,7 @@ const StatsCounter = ({ end, duration = 2000, label }) => {
             <div className="absolute inset-0 bg-violet-600/20 rounded-2xl blur-xl group-hover:bg-violet-500/30 transition-colors duration-300" />
             <div className="relative">
                 <div className="text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
-                    {count}%
+                    {count}
                 </div>
                 <div className="text-violet-100 text-lg font-medium">
                     {label}
@@ -124,10 +124,10 @@ const IlluminatedStatsSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {[
-                        { value: 95, label: "Satisfação dos alunos" },
-                        { value: 98, label: "Tutores certificados" },
+                        { value: 95, label: "Tutorias Realizadas" },
+                        { value: 37, label: "Tutores Cadastrados" },
                         { value: 87, label: "Melhoria nas notas" },
-                        { value: 92, label: "Recomendação" },
+                        { value: 92, label: "Alunos Aprendendo" },
                     ].map((stat, index) => (
                         <motion.div
                             key={index}
