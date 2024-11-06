@@ -160,10 +160,10 @@ function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl md:text-2xl mb-8 text-violet-100 max-w-2xl mx-auto"
+              className="text-3xl md:text-2xl mb-8 text-violet-100 font-semibold mx-auto"
             >
-              Conecte-se com tutores especializados e aproveite a conveniência
-              de aulas personalizadas.
+              Conecte-se com tutores universitários e aproveite a conveniência
+              de aulas presenciais ou virtuais.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -176,7 +176,6 @@ function Home() {
                 className="bg-[#6D28D9] text-white px-8 py-4 rounded-full font-medium hover:bg-violet-800 transition-colors flex items-center gap-2 shadow-lg shadow-violet-500/20"
               >
                 Encontrar Tutor
-                <ArrowRightIcon size={20} />
               </a>
             </motion.div>
           </div>
@@ -198,7 +197,8 @@ function Home() {
                 Principais Benefícios
               </h2>
               <p className="text-xl text-violet-200/80 max-w-2xl mx-auto">
-                Nossa plataforma oferece uma experiência completa de aprendizado
+                Encontre apoio e novas perspectivas com tutores universitários
+                em uma plataforma que valoriza a troca de conhecimento.
               </p>
             </motion.div>
 
@@ -214,12 +214,14 @@ function Home() {
                 {
                   icon: <UsersIcon className="text-violet-400" size={40} />,
                   title: "Ampla Rede",
-                  description: "Acesso a tutores qualificados e experientes",
+                  description:
+                    "Acesso a uma vasta base de tutores além do seu círculo social.",
                 },
                 {
                   icon: <LightbulbIcon className="text-yellow-400" size={40} />,
                   title: "Tutores Selecionados",
-                  description: "Profissionais avaliados e certificados",
+                  description:
+                    "Tutores avaliados por professores, garantindo a qualidade e competência no suporte aos alunos.",
                 },
                 {
                   icon: <ClockIcon className="text-blue-400" size={40} />,
@@ -301,11 +303,10 @@ function Home() {
                 experiência acadêmica
               </p>
               <a
-                href="/sign-up"
+                href="/"
                 className="inline-flex items-center gap-2 bg-[#6D28D9] text-white px-8 py-4 rounded-full font-medium hover:bg-violet-800 transition-colors shadow-lg shadow-violet-500/20"
               >
                 Começar agora
-                <ArrowRightIcon size={20} />
               </a>
             </motion.div>
           </div>
