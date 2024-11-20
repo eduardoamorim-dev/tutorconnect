@@ -20,5 +20,6 @@ Este projeto é uma landing page para o sistema TutorConnect, uma plataforma que
 - **Stats Dinâmicas**: Contadores animados que exibem estatísticas em tempo real, como a porcentagem de alunos que já utilizaram o sistema.
 - **Chamada para Ação**: Botão chamativo para direcionar os visitantes a encontrarem um tutor.
 
-Licença
+## Licença
+
 Todos os direitos reservados. Este projeto não pode ser copiado, redistribuído ou modificado sem permissão explícita.
