@@ -1,7 +1,7 @@
 
 # LandingPage TutorConnect
 
-Este projeto é uma landing page para o sistema TutorConnect, uma plataforma que conecta tutores universitários a alunos que buscam apoio acadêmico. O sistema oferece uma experiência de aprendizado flexível, com tutoriais presenciais e virtuais, além de promover uma ampla rede de tutores avaliados por professores.
+Este projeto é uma landing page para o sistema TutorConnect, uma plataforma que conecta tutores universitários a alunos que buscam apoio acadêmico. O sistema oferece uma experiência de aprendizado flexível, com tutorias presenciais e virtuais, além de promover uma ampla rede de tutores avaliados por professores.
 
 ## Tecnologias Utilizadas
 
