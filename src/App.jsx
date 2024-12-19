@@ -6,6 +6,7 @@ import Home from "./Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import SplashScreen from "./components/SplashScreen/SplashScreen";
 
+
 function App() {
   const [showSplash, setShowSplash] = useState(true);
 

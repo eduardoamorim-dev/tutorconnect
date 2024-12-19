@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import {
@@ -13,8 +14,9 @@ import { Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
 
 import Footer from "../components/Footer/Footer";
+import graduationCap from "../assets/graduationCap.svg";
 import IlluminatedStatsSection from "../components/StateSection/IlluminatedStatsSection";
-import { Link } from "react-router-dom";
+
 
 function randomInSphere(numPoints, radius) {
     const points = new Float32Array(numPoints * 3);
@@ -162,21 +164,33 @@ function Home() {
                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-violet-900/30 to-gray-900 z-0" />
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(109,40,217,0.1)_0%,transparent_65%)]" />
                     <div className="relative z-10 text-center px-4">
-                        <motion.h1
-                            initial={{ opacity: 0, y: 20 }}
+                        <motion.div className="mb-8">   
+                        <motion.img
+                            src={graduationCap}
+                            alt="Graduation Cap"
+                            initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-violet-300 to-violet-500"
-                        >
-                            Transforme seu aprendizado com nosso Sistema de
-                            Tutoria
-                        </motion.h1>
+                            className="w-16 h-16 mx-auto mb-4"
+                        />  
+                            <motion.h1
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8 }}
+                                className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-violet-300 to-violet-500"
+                            >
+                                Tutor Connect
+                            </motion.h1>
+                        </motion.div>
+                        
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-3xl md:text-2xl mb-8 text-violet-100 font-semibold mx-auto"
                         >
+                            Transforme seu aprendizado com nosso Sistema de
+                            Tutoria<br/>
                             Conecte-se com tutores universitários e aproveite a
                             conveniência de aulas presenciais ou virtuais.
                         </motion.p>
