@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./Home/Home";
 import NotFound from "./components/NotFound/NotFound";
-import SplashScreen from "./components/SplashScreen/SplashScreen";
+import SplashScreen from "./components/splashScreen/splashScreen";
+
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
