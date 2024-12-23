@@ -3,16 +3,14 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./Home/Home";
-import NotFound from "./components/NotFound/NotFound";
 import SplashScreen from "./components/SplashScreen/SplashScreen";
-
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowSplash(false), 2000); 
-    return () => clearTimeout(timer); 
+    const timer = setTimeout(() => setShowSplash(false), 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -23,7 +21,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/notfound" element={<NotFound />} />
+            <Route path="http://localhost:3001/sign-in" />
           </Routes>
         </Router>
       )}
